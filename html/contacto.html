@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventine-contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css" />
+  </head>
+  <body>
+    <header><!-- BARRA MENU -->
+      <nav>
+        <ul class="menu">
+          <li><a class="menu2" href="/index.html">Inicio</a></li>
+          <li><a class="menu2" href="/html/producto.html">Productos</a></li>
+          <li><a class="menu2" href="/html/contacto.html">Contacto</a></li>
+          <li><a class="menu2" href="/html/sobrenosotros.html">Sobre Nosotros</a></li>
+          <li><a class="menu2" href="/html/merch.html">Merch</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <section>    
+        <div class="container_form">
+
+          <form action="envio.php" method="post">
+
+            <div class="form">
+
+               <h1>Contacto</h1>
+
+              <div class="grupo">
+               <input type="text" name="" id="name" required><span class="barra"></span>
+               <label for="">Nombre completo</label>
+              </div>
+
+             <div class="grupo">
+               <input type="email" name="" id="name" required><span class="barra"></span>
+               <label for="">Email</label>
+             </div>
+
+             <div class="grupo">
+               <input type="number" name="" id="number" required><span class="barra"></span>
+               <label for="">Num.Teléfono</label>
+             </div>
+          
+             <div class="grupo">
+               <textarea id="grupo__mensaje" name="message" cols="35" rows="8" placeholder="Tu Mensaje"></textarea>
+             </div>
+
+             <button type="submit">Enviar</button>
+
+            </div> <!-- cierre div form -->
+         </form>
+       </div> <!-- cierre div container_form -->
+     </section>
+   </main>
+   <footer>
+     <div>    
+      <p>&#169;Todos los derechos reservados. Mirko Alvarez.</p> 
+    </div>
+  </footer>
+  </body>
+</html>

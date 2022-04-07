@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* BARRA MENU */
+.menu {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 19px;
+}
+
+.menu2 {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.3s solid transparent;
+  padding-bottom: 5px;
+}
+
+.menu2:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+nav ul li a {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* TITULO */
+.box{
+  background-color: rgb(194, 164, 129);
+  padding: 20px 0px 50px;
+  border-bottom: 10px solid rgb(75, 75, 75);
+}
+
+.titulo1 {
+  color:whitesmoke;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 6.25em;
+  text-align: center;
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+}
+
+/* BACKGROUND */
+main {
+  background-image: url(/asents/producto/blackwood.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+
+/* CONTEINER */
+.conteiner1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+
+/* CONTEINER hijo */
+.grupo1 {
+  background: rgb(75, 75, 75);
+  box-shadow: 0px 0px 8px whitesmoke,  1px 1px 8px whitesmoke;
+  width: 400px;
+  height: 560px;
+  justify-items: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px 50px 50px 50px;
+}
+
+/* subtitulos de logos */
+div h2 {
+  color:whitesmoke;
+  font-family: 'Bitter', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgb(194, 164, 129), 0px 0px 5px rgb(194, 164, 129);
+}
+
+.parrafo{
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.logocafe{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px black;
+}
+
+button{
+  font-family: sans-serif;
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 30px auto;
+  color: rgb(151, 126, 92);
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+}
+
+
+footer{
+  color:white;
+  background-color: rgb(75, 75, 75);
+  text-align: center;
+  font-size: 25px;
+  padding-block-end: 1px;
+}
+
+
+@media screen and (max-width:780px) {
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .titulo1 {
+    font-size: 5.25em;
+  }
+
+  main{
+    width: 100%;
+    height: auto;
+  }
+
+  .grupo1 {
+    width: 400px;
+    height: 560px;
+    justify-items: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  
+}
+
+@media screen and (max-width: 660px) {
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  .titulo1{
+    font-size: 4em;
+  }
+}
+
+/* 480px RESPONSIVE *//* 480px RESPONSIVE *//* 480px RESPONSIVE */
+@media screen and (max-width: 480px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+  
+  .grupo1 {
+    width: 85%;
+    height: auto;
+  }
+
+  .titulo1{
+    font-size: 2.6em;
+  }
+}
+
+
+/* 320px RESPONSIVE *//* 320px RESPONSIVE *//* 320px RESPONSIVE */
+@media screen and (max-width: 320px) {
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+    padding: 5px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .titulo1{
+    font-size: 2em;
+  }
+
+  .grupo1 {
+    width: 80%;
+    height: auto;
+  }
+}
