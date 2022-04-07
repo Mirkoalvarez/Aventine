@@ -34,7 +34,7 @@ nav ul li a {
 
 /* BACKGROUND */
 main {
-  background-image: url(/asents/sobrenosotros/background-sobrenosotros.jpg);
+  background-image: url(../asents/sobrenosotros/background-sobrenosotros.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
