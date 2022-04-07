@@ -51,7 +51,7 @@ nav ul li a {
 
 /* BACKGROUND */
 main {
-  background-image: url(/asents/producto/blackwood.jpg);
+  background-image: url(./asents/producto/blackwood.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -36,7 +36,7 @@ nav ul li a {
 
 /* BACKGROUND */
 .fondocafe {
-  background-image: url(/asents/index/cafefondo.jpg);
+  background-image: url(./asents/index/cafefondo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
