@@ -38,7 +38,7 @@ nav ul li a {
 /* BACKGROUND */
 main{
   font-family:sans-serif;
-  background-image:url(./asents//contact/contactt.jpg);
+  background-image:url(/asents//contact/contactt.jpg);
   background-repeat: no-repeat;
   background-position: relative;
   background-size: cover;
