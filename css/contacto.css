@@ -10,7 +10,7 @@ header{
 }
 
 .menu {
-  background-color: black;
+  background-color: rgb(33, 33, 41);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-evenly;
