@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .titulo1 {
+    color: whitesmoke;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 220px;
+    text-align: center;
+    text-shadow: $shadow;
+    padding-top: 80px;
+  }
+  
+  .titulo2 {
+    color: rgb(194, 164, 129);
+    font-family: "Sansita Swashed", cursive;
+    font-size: 150px;
+    text-align: center;
+    text-shadow: 1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke, 8px 8px 5px black;
+  }
+  
+  article {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  article p {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 5px black;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-style: hidden;
+    border-radius: 10px;
+  }
+  
+  footer {
+    color: white;
+    background-color: $background;
+    text-align: center;
+    font-size: 32px;
+    padding-block-end: 1px;
+  }
+  
