@@ -1,0 +1,66 @@
+@mixin blog_conteiner {
+    background: $bgdark;
+    box-shadow:$boxshadow;
+    width: 800px;
+    height: 650px;
+    justify-items: center;
+    font-family: $parrafo;
+    font-size: 15px;
+    text-align: center;
+    margin: 0px 50px 50px 50px;
+}
+$estilosp:(
+    fuente: 1.2em,
+    fuente2: 2.5em,
+    colorfuente: whitesmoke,
+    centrado: center
+);
+
+.blog {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    flex-wrap: wrap;
+    .conteiner_blog{
+       @include blog_conteiner;
+        @media screen and (max-width:837px) {
+            width: 80%;
+            height: auto;
+
+        }
+        h2{
+            display: flex;
+            justify-content: map-get($estilosp, centrado);
+            align-items: map-get($estilosp, centrado); 
+            color: map-get($estilosp, colorfuente);
+            font-family: $titulo2;
+            font-size: map-get($estilosp, fuente2);
+            text-shadow:$shadow;
+        }
+        .blog__p{
+            display: flex;
+            justify-content: map-get($estilosp, centrado);
+            align-items: map-get($estilosp, centrado);
+            color: map-get($estilosp, colorfuente);
+            text-align: map-get($estilosp, centrado);
+            font-family:$parrafo;
+            font-size: map-get($estilosp, fuente);
+            padding-top: 20px;
+            @media screen and (max-width:1020px) {
+                display: flex;
+                padding: 10px;}
+        }
+    }
+}
+iframe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: map-get($estilosp, centrado);
+    align-items: map-get($estilosp, centrado);
+    margin: auto;
+    padding: 10px;
+    border-radius: 5%;
+    @media screen and (max-width:837px) {
+        width: 80%;
+    }
+}

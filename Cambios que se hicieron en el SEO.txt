@@ -1,0 +1,16 @@
+Cambios que se hicieron en el SEO:
+index.html: - se agregó un description “Bienvenidos a nuestra página Aventine donde encontraras los mejores cafés en sus variedades.”
+-se agregaron keywords “Aventine cafés, página oficial Aventine, cafetería Aventine”
+-se agregó un author “Mirko Alvarez.”
+producto.html: - se agregó un description “Nuestros cafés a la venta! Blends elegidos por baristas profesionales para cada variedad.”
+-se agregaron keywords “Cafés de Aventine, productos Aventine, variedades de café”
+-se agregó un author “Mirko Alvarez”
+contacto.html: - se agregó un description “Para contactarnos directamente te dejamos este pequeño formulario.”
+-se agregaron keywords “Contacto Aventine oficial, enviar mensaje aventine, aventine quejas o inconvenientes”
+-se agregó un author “Mirko Alvarez”
+sobrenostros.html: - se agregó un description “Aquí presentamos nuestra historia, lo que somos, con quien colaboramos.”
+-se agregaron keywords “Historia Aventine, cafeteria Aventine fotos, socios de Aventine”
+-se agregó un author “Mirko Alvarez”
+merch.html: - se agregó un description “Aquí nuestras mercancías complementarias acompañado de nuestro blog con consejos de profesionales.”
+-se agregaron keywords “merch Aventine, blog Aventine, productos complementarios Aventine, taza Aventine, jarra barista Aventine”
+-se agregó un author “Mirko Alvarez”

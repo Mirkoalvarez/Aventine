@@ -1,334 +1,285 @@
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 /* BARRA MENU */
-.menu {
-  background-color: rgb(33, 37, 41);
+ul {
+  background-color: #212529;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   list-style: none;
-  padding: 19px;
-}
+  padding: 19px; }
+  @media screen and (max-width: 837px) {
+    ul ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 5px;
+      padding: 10px; } }
+  @media screen and (max-width: 530px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 5px;
+      padding: 10px; } }
+  @media screen and (max-width: 380px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 5px;
+      padding: 10px; } }
+  ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s solid transparent;
+    padding-bottom: 5px;
+    font-size: 25px; }
+    ul li a:hover {
+      color: white;
+      border-bottom: 2px solid white; }
+    @media screen and (max-width: 837px) {
+      ul li a {
+        font-size: 20px; } }
+    @media screen and (max-width: 530px) {
+      ul li a {
+        font-size: 18px; } }
+    @media screen and (max-width: 380px) {
+      ul li a {
+        font-size: 14px; } }
 
-.menu2 {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: whitesmoke;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transition: 0.3s solid transparent;
-  padding-bottom: 5px;
-}
-
-.menu2:hover {
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-nav ul li a {
-  font-size: 25px;
-}
-
-/* TITULO */
-.box{
-  background-color: rgb(194, 164, 129);
+.box {
+  background-color: #c2a481;
   padding: 20px 0px 50px;
-  border-bottom: 10px solid rgb(75, 75, 75);
-}
+  border-bottom: 10px solid #4b4b4b; }
+  .box .titulo1 {
+    color: whitesmoke;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 8em;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px black; }
+    @media screen and (max-width: 837px) {
+      .box .titulo1 {
+        font-size: 5em; } }
+    @media screen and (max-width: 380px) {
+      .box .titulo1 {
+        font-size: 3em; } }
 
-.titulo1 {
-  color:whitesmoke;
-  font-family: 'Sansita Swashed', cursive;
-  font-size: 8em;
-  text-align: center;
-  text-shadow: 1px 1px 1px black, 1px 1px 1px black;
-}
-
-/* BACKGROUND */
-main{
+main {
   background-image: url(../asents/merch/background-merch.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 1200px;
-}
+  height: auto; }
+  main .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    padding-top: 2em;
+    gap: 120px; }
+    @media screen and (max-width: 837px) {
+      main .conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 20px; } }
+    @media screen and (max-width: 530px) {
+      main .conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 20px; } }
+  main .grupo {
+    display: flex;
+    background-color: #212529;
+    box-shadow: 0px 0px 8px whitesmoke, 1px 1px 8px whitesmoke;
+    width: 1000px;
+    height: 400px;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center; }
+    @media screen and (max-width: 1020px) {
+      main .grupo {
+        width: 80%; } }
+    @media screen and (max-width: 837px) {
+      main .grupo {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        width: auto;
+        height: auto; } }
+    @media screen and (max-width: 530px) {
+      main .grupo {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        width: 80%;
+        height: auto; } }
+    @media screen and (max-width: 380px) {
+      main .grupo {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        width: 70%;
+        height: auto; } }
 
-/* CONTENEDORES */
-.conteiner{
-  display:flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  margin-left: auto;
-  padding-top: 2em;
-  gap: 120px;
-}
-
-/* CONTENEDOR hijo */
-.grupo {
-  display: flex;
-  background: rgb(75, 75, 75);
-  box-shadow: 0px 0px 8px whitesmoke,  1px 1px 8px whitesmoke;
-  width: 1000px;
-  height: 400px;
-  font-family: sans-serif;
-  font-size: 15px;
-  text-align: center;
-}
-
-/* NOMBRE DEL PRODUCTO */
-div h2 {
+h2 {
   display: flex;
   align-items: center;
-  color:whitesmoke;
-  font-family: 'Bitter', serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: whitesmoke;
+  font-family: "Bitter", serif;
   font-size: 2.5em;
-  text-shadow: 0px 0px 5px rgb(194, 164, 129), 0px 0px 5px rgb(194, 164, 129);
-}
+  text-shadow: 0px 0px 5px #c2a481, 0px 0px 5px #c2a481; }
+  @media screen and (max-width: 837px) {
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
 
-/* IMAGEN PRODUCTO */
-.merch__logo{
-  display:block;
+img {
+  display: block;
   margin: auto auto auto 20px;
   width: 280px;
   height: 250px;
   border-radius: 10%;
-  box-shadow: 0px 0px 5px black;
-}
+  box-shadow: 0px 0px 5px black; }
+  @media screen and (max-width: 837px) {
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 14px auto; } }
+  @media screen and (max-width: 380px) {
+    img {
+      width: 100%; } }
 
-/* PARRAFO PRODUCTO */
 .descripcion {
   display: flex;
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  font-family: 'Bitter', serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
   text-align: center;
   padding-top: 30px;
-  width: 450px;
-}
+  width: 450px; }
+  @media screen and (max-width: 1020px) {
+    .descripcion {
+      font-size: 100%; } }
+  @media screen and (max-width: 837px) {
+    .descripcion {
+      font-size: 20px;
+      text-align: center;
+      padding: 30px; } }
+  @media screen and (max-width: 530px) {
+    .descripcion {
+      width: 80%;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 30px; } }
+  @media screen and (max-width: 380px) {
+    .descripcion {
+      width: 70%;
+      font-size: 1.3em; } }
 
-div span{
+span {
   display: flex;
   align-items: center;
   margin-right: 20px;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
-.button{
+button {
   display: flex;
   align-items: center;
   font-family: sans-serif;
   border: none;
   width: 100%;
-  color: rgb(151, 126, 92);
+  color: #c2a481;
   height: 40px;
   font-size: 16px;
   cursor: pointer;
-  background-color: black;
-}
-
+  background-color: black; }
+  @media screen and (max-width: 837px) {
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      margin: auto;
+      margin-bottom: 10px; } }
 
 footer {
   color: white;
-  background-color: rgb(33, 37, 41);
+  background-color: #212529;
   text-align: center;
-  font-size: 25px;
-  padding-block-end: 1px;
-}
+  font-size: 25px; }
 
-@media screen and (max-width:1020px) {
-
-  .grupo{
-    width: 80%;
-  }
-  
-  .descripcion{
-    font-size: 100%;
-  }
-
-}
-
-/* 820px RESPONSIVE *//* 820px RESPONSIVE *//* 820px RESPONSIVE */
-@media screen and (max-width:820px) {
-  
-  /* BARRA MENU */
-  .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    padding: 10px;
-  }
-
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  .titulo1 {
-    font-size: 5em;
-  }
-
-  /* BACKGROUND */
-  main{
-    height: auto;
-  }
-
-  /* CONTENEDORES */
-  .conteiner{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    margin:auto;
-    padding-bottom: 20px;
-  }
-
-  /* CONTENEDORES hijos*/
-  .grupo{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, auto);
-    width: auto;
-    height: auto;
-  }
-  
-  /* img */
-  .merch__logo{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: 14px auto;
-  }
-
-  /* parrafo */
-  .descripcion{
-    font-size: 20px;
+.blog {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  flex-wrap: wrap; }
+  .blog .conteiner_blog {
+    background: #212529;
+    box-shadow: 0px 0px 8px whitesmoke, 1px 1px 8px whitesmoke;
+    width: 800px;
+    height: 650px;
+    justify-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
     text-align: center;
-    padding: 30px;
-  }
+    margin: 0px 50px 50px 50px; }
+    @media screen and (max-width: 837px) {
+      .blog .conteiner_blog {
+        width: 80%;
+        height: auto; } }
+    .blog .conteiner_blog h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: whitesmoke;
+      font-family: "Bitter", serif;
+      font-size: 2.5em;
+      text-shadow: 0px 0px 5px #c2a481, 0px 0px 5px #c2a481; }
+    .blog .conteiner_blog .blog__p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: whitesmoke;
+      text-align: center;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.2em;
+      padding-top: 20px; }
+      @media screen and (max-width: 1020px) {
+        .blog .conteiner_blog .blog__p {
+          display: flex;
+          padding: 10px; } }
 
-  /* Titulo producto */
-  div h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-}
-
-
-/* 530px RESPONSIVE *//* 530px RESPONSIVE *//* 530px RESPONSIVE */
-@media screen and (max-width:530px) {
-
-  /* BARRA MENU */
-  .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    padding: 10px;
-  }
-
-  nav ul li a {
-    font-size: 18px;
-  }
-
-  /* BACKGROUND */
-  main{
-    height: auto;
-  }
-
-  /* CONTENEDORES */
-  .conteiner{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    margin:auto;
-    padding-bottom: 20px;
-  }
-
-  /* CONTENEDORES hijos*/
-  .grupo{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, auto);
-    width: 80%;
-    height: auto;
-  }
-
-  /* parrafi */
-  .descripcion{
-    width: 80%;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 30px;
-  }
-}
-
-/* 380px RESPONSIVE */ /* 380px RESPONSIVE */ /* 380px RESPONSIVE */
-@media screen and (max-width:380px) {
-
-  /* BARRA MENU */
-  .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    padding: 10px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-  }
-
-  .titulo1 {
-    font-size: 3em;
-  }
-
-  /* BACKGROUND */
-  main{
-    height: auto;
-  }
-
-  /* CONTENEDOR hijo */
-  .grupo{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, auto);
-    width: 70%;
-    height: auto;
-  }
-
-  /* img */
-  .merch__logo{
-    width: 100%;
-  }
-
-  /* parrafo */
-  .descripcion{
-    width: 70%;
-    font-size: 1.3em;
-  }
-}
+iframe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5%; }
+  @media screen and (max-width: 837px) {
+    iframe {
+      width: 80%; } }

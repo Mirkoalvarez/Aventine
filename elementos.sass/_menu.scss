@@ -1,12 +1,21 @@
 .menu {
-    background-color: rgb(33, 37, 41);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; 
     list-style: none;
+    background-color: rgb(33, 37, 41);
     padding: 19px;
-  }
+}
+ul{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+  align-items: center; 
+  list-style: none;
+  background-color: rgb(33, 37, 41);
+  padding: 19px;
+}
   
   .menu2 {
     display: flex;
